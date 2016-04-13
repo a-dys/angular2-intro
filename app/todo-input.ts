@@ -5,17 +5,19 @@ import {TodoService} from "./todo-service";
     selector: 'todo-input',
     directives: [TodoInput],
     template: `<div>
-    <input type="text" #myInput>
-    <button (click)="onClick(myInput.value)">Click me</button>
+    <form (submit)="onSubmit()">
+    <input type="text" [(ngModel)]="todoModel">
+    </form>
     </div>`
 })
 export class TodoInput{
+    todoModel;
     //Injecting
     constructor(public todoService:TodoService){ //'public' to make todoService accesible in onCLick
     }
 
-    onClick(value){
-        this.todoService.todos.push(value);
+    onSubmit(value){
+        this.todoService.todos.push(this.todoModel);
         console.log(this.todoService.todos);
     }
 }
