@@ -7,10 +7,10 @@ import {TodoList} from './todo-list'
 @Component({
     selector: 'my-app',
     directives: [TodoInput, TodoList],
-    template: `<h1>
+    template: `<div>
     <todo-input></todo-input>
     <todo-list></todo-list>
-    </h1>`
+    </div>`
 })
 class App { }
 
