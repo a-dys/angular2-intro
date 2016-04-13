@@ -6,7 +6,7 @@ import {TodoService} from "./todo-service";
     directives: [TodoInput],
     template: `<div>
     <input type="text" #myInput>
-    <button (mouseover)="onClick(myInput.value)">Click me</button>
+    <button (click)="onClick(myInput.value)">Click me</button>
     </div>`
 })
 export class TodoInput{
