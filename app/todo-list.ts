@@ -6,7 +6,7 @@ import {TodoService} from "./todo-service"
     template: `<div>
         <ul>
             <li *ngFor="#todo of todoService.todos"> <!--'*' this is directive which going to change element itself-->
-            {{todo}}
+            {{todo.title}}
             </li>
         </ul>
     </div>`
