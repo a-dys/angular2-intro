@@ -1,11 +1,12 @@
 import {Component, Input} from "angular2/core";
-
+import {ViewEncapsulation} from "angular2/core"
 @Component ({
+    encapsulation: ViewEncapsulation.Emulated, //this is default
     selector: 'todo-item-renderer',
     template: `
     <style>
         .completed {
-          text-decoration: line-through;
+            text-decoration: line-through;
         }
     </style>
     <div>
