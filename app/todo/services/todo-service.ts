@@ -13,7 +13,7 @@ export class TodoService {
         new TodoModel("play"),
         new TodoModel("record","completed"),
         new TodoModel("earn"),
-        new TodoModel("swim","copleted")
+        new TodoModel("swim","completed")
 
     ];
 
