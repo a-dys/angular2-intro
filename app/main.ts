@@ -19,6 +19,6 @@ import {SearchBox} from './search/components/search-box';
     ></todo-list>
     </div>`
 })
-class App { }
+class App{}
 
 bootstrap(App,[TodoService]); //any components that I have in my application can use this service

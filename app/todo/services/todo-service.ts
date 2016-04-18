@@ -3,7 +3,7 @@ import {TodoModel} from "./todo-model"
 
 @Injectable()
 export class TodoService {
-    todos:[TodoModel] = [
+    todos:TodoModel[] = [
         new TodoModel("eat"),
         new TodoModel("sleep"),
         new TodoModel("code"),
@@ -28,6 +28,6 @@ export class TodoService {
             ...this.todos.slice(0, i),
             todo,
             ...this.todos.slice(i + 1)
-        ]
+        ];
     }
 }
